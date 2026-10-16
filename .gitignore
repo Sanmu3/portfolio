@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# AI / agent tooling - jangan di-commit ataupun di-push
+.agents/
+.opencode/
+_bmad/
+_bmad-output/
+.claude/
+.opencode.json

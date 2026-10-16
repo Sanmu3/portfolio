@@ -1,23 +1,58 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Muhammad Mujahid Muslim — Frontend & Mobile Developer. React Native, Vue.js, TypeScript." />
+    <title>Muhammad Mujahid Muslim — Frontend & Mobile Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  :root {
+    --bg: #05060e;
+    --bg-2: #0a0d1d;
+    --surface: rgba(255, 255, 255, 0.035);
+    --line: rgba(255, 255, 255, 0.09);
+    --text: #f2f4ff;
+    --muted: rgba(242, 244, 255, 0.64);
+    --faint: rgba(242, 244, 255, 0.38);
+    --cyan: #67e8f9;
+    --violet: #a78bfa;
+    --gold: #d8c49a;
+    --grad-future: linear-gradient(100deg, #67e8f9 0%, #818cf8 45%, #c084fc 100%);
+    --grad-gold: linear-gradient(135deg, #f4e6c3 0%, #d8c49a 55%, #9a7f4e 100%);
+    --radius: 20px;
+    --font-display: "Unbounded", "Space Grotesk", system-ui, sans-serif;
+    --font-sans: "Space Grotesk", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; background: var(--bg); }
+  html, body { margin: 0; width: 100%; min-height: 100%; }
+  body {
+    background:
+      radial-gradient(1000px 520px at 12% -6%, rgba(103, 232, 249, 0.13), transparent 60%),
+      radial-gradient(900px 620px at 88% 4%, rgba(167, 139, 250, 0.16), transparent 60%),
+      radial-gradient(760px 560px at 50% 108%, rgba(216, 196, 154, 0.07), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: rgba(103, 232, 249, 0.3); }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
 </style>
